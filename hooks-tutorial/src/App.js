@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 //import Counter from "./Counter";
 //import Info from "./Info";
-import CounterWithUseReducer from "./CounterWithUseReducer";
+//import CounterWithUseReducer from "./CounterWithUseReducer";
+//import InfoWithUseReducer from "./InfoWithUseReducer";
+import Average from "./Average";
+//import RefSample from "./RefSample";
+import CustomHookInfo from "./CustomHookInfo";
 
 const App = () => {
   // return <Counter />;
-  return <CounterWithUseReducer />;
+  // return <CounterWithUseReducer />;
+  // return <InfoWithUseReducer />;
+  //return <RefSample />;
+  return <CustomHookInfo />;
   /* const[visible, setVisible] = useState(false);
   return (
       <div>
