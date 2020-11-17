@@ -1,10 +1,12 @@
 import React from "react";
-import SassComponent from "./SassComponent";
+import StyledComponent from "./StyledComponent";
+//import CssModule from "./CSSModule";
+//import SassComponent from "./SassComponent";
 
 function App() {
   return (
     <div>
-      <SassComponent />
+      <StyledComponent />
     </div>
   );
 }
