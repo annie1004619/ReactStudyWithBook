@@ -19,7 +19,7 @@ const initialState = {
 };
 
 //state가 undefined일 때는 initialState를 기본값으로 사용
-function reducer(state = initialState) {
+function reducer(state = initialState, action) {
   //action.type에 따라 다른 작업을 처리함
   switch (action.type) {
     case TOGGLE_SWITCH:
@@ -58,3 +58,13 @@ const render = () => {
 
 render();
 store.subscribe(render);
+
+divToggle.onclick = () => {
+  store.dispatch(toggleSwitch());
+};
+btnIncrease.onclick = () => {
+  store.dispatch(increase(1));
+};
+btnDecrease.onclick = () => {
+  store.dispatch(decrease());
+};
